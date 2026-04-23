@@ -67,6 +67,9 @@ app.get("/books/:id", async (req, res) => {
         });
     }
 });
+app.get("/", (req,res)=>{
+   res.send("Book API Running 🚀");
+});
 
 app.delete("/books/:id", async (req, res) => {
     try {
